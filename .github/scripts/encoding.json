@@ -1,0 +1,7 @@
+{
+  "common/coat_of_arms/**/*.txt": "UTF-8",
+  "common/**/*.txt": "UTF-8-SIG",
+  "events/**/*.txt": "UTF-8-SIG",
+  "gui/**/*.gui": "UTF-8",
+  "localization/**/*.yml": "UTF-8-SIG"
+}
