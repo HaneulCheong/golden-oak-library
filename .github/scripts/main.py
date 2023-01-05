@@ -43,6 +43,7 @@ def detect_encoding(filepath: Path, detector: UniversalDetector) -> Encoding:
 def main(arguments: argparse.Namespace) -> int:
     """
     **Main!**
+
     :param arguments:
         Parsed argument namespace
     :return:
@@ -51,13 +52,18 @@ def main(arguments: argparse.Namespace) -> int:
 
     modpath: Path = Path(arguments.path)
     if not modpath.is_dir():
-        raise NotADirectoryError(f"'{arguments.path}' is not a valid directory")
+        raise NotADirectoryError(f"'{str(modpath)}' is not a valid directory")
+    workflowpath: Path = Path("workflow-repo")
+    detector: UniversalDetector = UniversalDetector()
 
     errors: list[str] = list()
-    detector: UniversalDetector = UniversalDetector()
     checked_filepaths: set[Path] = set()
 
-    with open(".github/scripts/encoding.json", mode="r", encoding="utf_8") as f:
+    with open(
+        workflowpath.joinpath(Path(".github/scripts/encoding.json")),
+        mode="r",
+        encoding="utf_8",
+    ) as f:
         # noinspection PyTypeChecker
         encoding_pairs: OrderedDict[Pattern, Encoding] = json.load(
             f, object_pairs_hook=OrderedDict
@@ -72,7 +78,6 @@ def main(arguments: argparse.Namespace) -> int:
                         f"[Error] '{filepath}' should be encoded in '{expected_encoding}'"
                     )
             checked_filepaths.add(filepath)
-
     detector.close()
 
     if errors:
@@ -84,7 +89,6 @@ def main(arguments: argparse.Namespace) -> int:
 
 if __name__ == "__main__":
     arg_parser: argparse.ArgumentParser = argparse.ArgumentParser(
-        prog="python .github/scripts/main.py",
         description="Victoria 3 file encoding validator",
     )
     arg_parser.add_argument(
