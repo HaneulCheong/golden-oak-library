@@ -5,4 +5,4 @@ on:
 
 jobs:
   validation:
-    uses: "HaneulCheong/golden-oak-library/.github/workflows/encoding.yml@main"
+    uses: "HaneulCheong/golden-oak-library/.github/workflows/encoding.yml@beta"
