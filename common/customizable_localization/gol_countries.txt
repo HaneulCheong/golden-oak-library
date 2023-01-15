@@ -1,0 +1,17 @@
+﻿country_desc_loc = {
+	type = country
+	random_valid = no
+
+	# # Example
+	# text = {
+	# 	trigger = {
+	# 		# Trigger here
+	# 	}
+	# 	localization_key = key_here
+	# }
+
+	text = {
+		localization_key = country_desc_loc_default
+		fallback = yes
+	}
+}

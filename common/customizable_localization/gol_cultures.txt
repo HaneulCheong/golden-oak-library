@@ -1,0 +1,17 @@
+﻿culture_desc_loc = {
+	type = culture
+	random_valid = no
+
+	# # Example
+	# text = {
+	# 	trigger = {
+	# 		# Trigger here
+	# 	}
+	# 	localization_key = key_here
+	# }
+
+	text = {
+		localization_key = culture_desc_loc_default
+		fallback = yes
+	}
+}

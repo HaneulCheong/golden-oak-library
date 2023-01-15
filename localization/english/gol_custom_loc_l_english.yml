@@ -1,0 +1,25 @@
+﻿l_english:
+ # Country descriptions
+ country_desc_loc_default: "[Country.GetFlavorText]"
+
+ # Character descriptions
+ character_desc_loc_default: ""
+
+ # Culture descriptions
+ culture_desc_loc_default: ""
+
+ # Goods descriptions
+ goods_desc_loc_default: ""
+
+ # Party descriptions
+ party_desc_loc_default: ""
+
+ # Religion descriptions
+ religion_desc_loc_default: ""
+
+ # State descriptions
+ state_desc_loc_capital: ""
+ state_desc_loc_colony: ""
+ state_desc_loc_treaty_port: ""
+ state_desc_loc_territory: ""
+ state_desc_loc_default: ""

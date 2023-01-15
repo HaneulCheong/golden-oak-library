@@ -1,0 +1,17 @@
+﻿religion_desc_loc = {
+	type = religion
+	random_valid = no
+
+	# # Example
+	# text = {
+	# 	trigger = {
+	# 		# Trigger here
+	# 	}
+	# 	localization_key = key_here
+	# }
+
+	text = {
+		localization_key = religion_desc_loc_default
+		fallback = yes
+	}
+}
