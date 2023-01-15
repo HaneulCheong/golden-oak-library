@@ -1,0 +1,17 @@
+﻿goods_desc_loc = {
+	type = goods
+	random_valid = no
+
+	# # Example
+	# text = {
+	# 	trigger = {
+	# 		# Trigger here
+	# 	}
+	# 	localization_key = key_here
+	# }
+
+	text = {
+		localization_key = goods_desc_loc_default
+		fallback = yes
+	}
+}

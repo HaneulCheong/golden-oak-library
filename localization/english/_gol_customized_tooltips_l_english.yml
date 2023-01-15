@@ -1,0 +1,24 @@
+﻿l_english:
+ # Country descriptions
+ DATA_COUNTRY_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Country.GetCustom('country_desc_loc'))]#!"
+
+ # Character descriptions
+ DATA_CHARACTER_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Character.GetCustom('character_desc_loc'))]#!"
+
+ # Culture descriptions
+ DATA_CULTURE_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Culture.GetCustom('culture_desc_loc'))]#!"
+
+ # Goods descriptions
+ DATA_GOODS_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Goods.GetCustom('goods_desc_loc'))]#!"
+
+ # Interest Group descriptions
+ DATA_INTEREST_GROUP_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', InterestGroup.GetDesc)]#!"
+
+ # Party descriptions
+ DATA_PARTY_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Party.GetCustom('party_desc_loc'))]#!"
+
+ # State descriptions
+ DATA_STATE_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', State.GetCustom('state_desc_loc'))]#!"
+
+ # Religion descriptions
+ DATA_RELIGION_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Religion.GetCustom('religion_desc_loc'))]#!"

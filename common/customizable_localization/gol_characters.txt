@@ -1,0 +1,17 @@
+﻿character_desc_loc = {
+	type = character
+	random_valid = no
+
+	# # Example
+	# text = {
+	# 	trigger = {
+	# 		# Trigger here
+	# 	}
+	# 	localization_key = key_here
+	# }
+
+	text = {
+		localization_key = character_desc_loc_default
+		fallback = yes
+	}
+}

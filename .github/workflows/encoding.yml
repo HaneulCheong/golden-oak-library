@@ -13,8 +13,14 @@ jobs:
   encoding:
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout repo content"
+      - name: "Checkout target repo content"
         uses: actions/checkout@v3
+
+      - name: "Checkout workflow repo content"
+        uses: actions/checkout@v3
+        with:
+          repository: HaneulCheong/golden-oak-library
+          path: workflow-repo
 
       - name: "Setup Python"
         uses: actions/setup-python@v4
@@ -24,7 +30,7 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install -r .github/scripts/requirements.txt
+          pip install -r ${GITHUB_WORKSPACE}/workflow-repo/.github/scripts/requirements.txt
 
       - name: "Run Python script"
-        run: python .github/scripts/main.py ${{ inputs.args }}
+        run: python ${GITHUB_WORKSPACE}/workflow-repo/.github/scripts/main.py ${{ inputs.args }}

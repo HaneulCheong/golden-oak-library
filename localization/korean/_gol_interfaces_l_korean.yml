@@ -1,0 +1,2 @@
+﻿l_korean:
+ STATE_TAX_CAPACITY_EFFECT_DESC: "[State.GetModifier.GetValueWithBreakdownFor('state_tax_collection_mult')] [Concept('concept_tax_waste', '$modifier_state_tax_collection_mult$')]"

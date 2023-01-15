@@ -1,0 +1,45 @@
+﻿state_desc_loc = {
+	type = state
+	random_valid = no
+
+	# # Example
+	# text = {
+	# 	trigger = {
+	# 		# Trigger here
+	# 	}
+	# 	localization_key = key_here
+	# }
+
+	text = {
+		trigger = {
+			is_capital = yes
+		}
+		localization_key = state_desc_loc_capital
+	}
+
+	text = {
+		trigger = {
+			is_under_colonization = yes
+		}
+		localization_key = state_desc_loc_colony
+	}
+
+	text = {
+		trigger = {
+			is_treaty_port = yes
+		}
+		localization_key = state_desc_loc_treaty_port
+	}
+
+	text = {
+		trigger = {
+			is_incorporated = no
+		}
+		localization_key = state_desc_loc_territory
+	}
+
+	text = {
+		localization_key = state_desc_loc_default
+		fallback = yes
+	}
+}
