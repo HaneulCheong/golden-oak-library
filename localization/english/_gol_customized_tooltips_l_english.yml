@@ -1,0 +1,3 @@
+l_english:
+ # Interest Group descriptions
+ DATA_INTEREST_GROUP_NAME_TOOLTIP_DESC: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', InterestGroup.GetDesc)]#!"
