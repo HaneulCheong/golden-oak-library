@@ -156,6 +156,7 @@ types event_window_types {
 							margin = { -15 -20 }
 						}
 
+						# Description
 						textbox = {
 							name = "description"
 							multiline = yes
@@ -171,20 +172,35 @@ types event_window_types {
 
 						divider_decorative = {}
 
-						textbox = {
-							name = "flavortext"
-							multiline = yes
-							autoresize = yes
-							minimumsize = { 480 -1 }
-							maximumsize = { 480 -1 }
-							parentanchor = top|hcenter
-							align = top|left
-							text = "#lore [EventWindow.GetFlavor]#!"
-							margin = { 30 10 }
+						# Flavor Text
+						scrollarea = {
+							maximumsize = { -1 450 }
+							autoresizescrollarea = yes
+							scrollbarpolicy_vertical = as_needed
+							scrollbarpolicy_horizontal = always_off
+							scrollbar_vertical = {
+								using = vertical_scrollbar
+							}
+							scrollbaralign_vertical = right
+
+							scrollwidget = {
+								textbox = {
+									name = "flavortext"
+									multiline = yes
+									autoresize = yes
+									minimumsize = { 480 -1 }
+									maximumsize = { 480 -1 }
+									parentanchor = top|hcenter
+									align = top|left
+									text = "#lore [EventWindow.GetFlavor]#!"
+									margin = { 30 10 }
+								}
+							}
 						}
 
 						widget = { size = { 20 10 }}
 
+						# Options
 						flowcontainer = {
 							direction = vertical
 							using = default_list_position
@@ -265,6 +281,7 @@ types event_window_types {
 							}
 						}
 
+						# Text Editor Button (Debug)
 						button = {
 							parentanchor = hcenter
 							visible = "[InDebugMode]"
@@ -274,6 +291,7 @@ types event_window_types {
 							onclick = "[EventWindow.AccessEvent.OpenInEditor]"
 						}
 
+						# Trigger Description (Debug)
 						textbox = {
 							background = {
 								using = default_background
@@ -286,6 +304,7 @@ types event_window_types {
 							align = hcenter|nobaseline
 						}
 
+						# Event ID (Debug)
 						textbox = {
 							visible = [InDebugMode]
 							parentanchor = hcenter
