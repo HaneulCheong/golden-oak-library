@@ -1,7 +1,7 @@
 {
   "name" : "Golden Oak Library",
   "id" : "",
-  "version" : "0.1.0-rc.1",
+  "version" : "0.1.0",
   "supported_game_version" : "1.1.*",
   "short_description" : "Yet another Victoria 3 framework mod",
   "tags" : [],
