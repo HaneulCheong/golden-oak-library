@@ -1,0 +1,3 @@
+﻿l_english:
+ STATE_TAX_CAPACITY_INSUFFICIENT: "\n$STATE_TAX_CAPACITY_EFFECT_DESC$"
+ STATE_TAX_CAPACITY_INSUFFICIENT_LONG: "\n\n@warning! Because usage is higher than capacity, the following effects are applied to the [concept_state]:\n$STATE_TAX_CAPACITY_EFFECT_DESC$"
