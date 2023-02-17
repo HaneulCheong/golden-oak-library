@@ -1,12 +1,13 @@
 {
   "name" : "Golden Oak Library",
   "id" : "",
-  "version" : "0.1.0",
+  "version" : "0.2.0-beta.1",
   "supported_game_version" : "1.2.*",
   "short_description" : "Yet another Victoria 3 framework mod",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
-    "multiplayer_synchronized" : true
+    "multiplayer_synchronized" : true,
+    "replace_paths": []
   }
 }
