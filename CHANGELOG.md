@@ -2,9 +2,13 @@
 
 ## 0.2
 
+### 0.2.0-beta.2
+
+- Fully merged vanilla update 1.2.1 into the mod
+
 ### 0.2.0-beta.1
 
-- Merged vanilla update 1.2.1 into the mod
+- Partially merged vanilla update 1.2.1 into the mod
 
 ## 0.1
 
