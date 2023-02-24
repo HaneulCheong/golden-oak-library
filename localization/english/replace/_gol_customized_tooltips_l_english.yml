@@ -18,7 +18,10 @@
  DATA_PARTY_NAME_TOOLTIP: "[SelectLocalization(Party.GetLeader.IsValid, 'DATA_PARTY_NAME_LEADER_TOOLTIP', 'concept_party_desc')]$DATA_PARTY_NAME_TOOLTIP_DESC$"
 
  # State descriptions
- DATA_STATE_NAME_TOOLTIP: "[State.GetMarketAccessStatus]\n[Concept('concept_pop','$concept_population$')]: [State.GetPopulationSize|kv]\n$STATE_AVAILABLE_LABOR$\n\nAverage [concept_sol]: [State.GetFormattedStandardOfLivingLabelAll|v] ([State.GetFormattedStandardOfLivingAll|v])\n[concept_gdp]: [State.GetGDPContributionPercentage|%1v] of the GDP in [State.GetOwner.GetName]\n[Concept('concept_taxes','$concept_taxation$')]: #variable [State.GetTaxationRevenue|+=K]#![SelectLocalization( State.IsSplitState, 'SPLIT_STATE_REGION_LINEBREAK_FIRST', '' )]$DATA_STATE_NAME_TOOLTIP_DESC$"
+ DATA_STATE_NAME_TOOLTIP: "[SelectLocalization(State.IsIncorporated, 'STATE_IS_INCORPORATED', 'STATE_IS_UNINCORPORATED')]\n[State.GetMarketAccessStatus]\n[Concept('concept_pop','$concept_population$')]: [State.GetPopulationSize|kv]\n$STATE_AVAILABLE_LABOR$\n\nAverage [concept_sol]: [State.GetFormattedStandardOfLivingLabelAll|v] ([State.GetFormattedStandardOfLivingAll|v])\n[concept_gdp]: [State.GetGDPContributionPercentage|%1v] of the GDP in [State.GetOwner.GetName]\n[Concept('concept_taxes','$concept_taxation$')]: #variable [State.GetTaxationRevenue|+=K]#![SelectLocalization( State.IsSplitState, 'SPLIT_STATE_REGION_LINEBREAK_FIRST', '' )]"
+ STATE_IS_INCORPORATED: "@incorporated! [Concept('concept_incorporated_state','$concept_incorporated$')]"
+ STATE_IS_UNINCORPORATED: "@unincorporated! [SelectLocalization(State.IsIncorporating, 'INCORPORATING', 'UNINCORPORATED')]"
+ UNINCORPORATED: "[Concept('concept_unincorporated_state','$concept_unincorporated_state_short$')]$DATA_STATE_NAME_TOOLTIP_DESC$"
 
  # Religion descriptions
  DATA_RELIGION_NAME_TOOLTIP: "[Concept('concept_religious_trait', '$concept_religious_traits$')]: [Religion.GetReligiousTraitsDesc]\n[concept_taboo]: [Religion.GetTaboosDesc][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(GetPlayer.IsValid, 'DATA_RELIGION_NAME_TOOLTIP_INGAME_ADDED'))]$DATA_RELIGION_NAME_TOOLTIP_DESC$"
