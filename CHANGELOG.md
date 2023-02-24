@@ -2,6 +2,13 @@
 
 ## 0.2
 
+### 0.2.0-rc.1
+
+- Merged vanilla update 1.2.2 into the mod
+- Event flavor texts are now brighter
+- Disabled the annoying shimmer sound effect
+- Gunglipbakmulgwan Classic is now used for Playfair in Korean
+
 ### 0.2.0-beta.2
 
 - Fully merged vanilla update 1.2.1 into the mod
